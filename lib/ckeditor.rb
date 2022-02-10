@@ -121,7 +121,7 @@ module Ckeditor
 
   # All css and js files from ckeditor folder
   def self.assets
-    @assets ||= Ckeditor.cdn_enabled? ? ['ckeditor/config.js'] : []
+    @assets ||= Ckeditor.cdn_enabled? ? ['ckeditor/config.js', 'ckeditor/application.js', 'ckeditor/application.css'] : []
   end
 
   def self.assets=(value)
